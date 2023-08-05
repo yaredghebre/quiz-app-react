@@ -1,6 +1,7 @@
 import "./Footer.css";
-function Footer() {
-  return <div className="footer">Made with X By Y</div>;
-}
+
+const Footer = () => {
+  return <div className="footer">Made with ♥ by Y</div>;
+};
 
 export default Footer;
