@@ -4,12 +4,12 @@ import { Alert, Button, MenuItem, TextField } from "@mui/material";
 import Categories from "../../data/Categories";
 import { useNavigate } from "react-router-dom";
 
-const Home = ({ name, setName }) => {
+const Home = ({ name, setName, getQuestions }) => {
   const [category, setCategory] = useState("");
   const [difficulty, setDifficulty] = useState("");
   const [error, setError] = useState(false);
 
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const handleSubmit = () => {
     if (!category || !difficulty || !name) {
@@ -17,8 +17,8 @@ const Home = ({ name, setName }) => {
       return;
     } else {
       setError(false);
-      fecthQuestions(category, difficulty);
-      history.push("/quiz");
+      getQuestions(category, difficulty);
+      navigate("/quiz");
     }
   };
 
