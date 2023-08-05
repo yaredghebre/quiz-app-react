@@ -1,12 +1,14 @@
 .content {
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
 
   .settings {
     width: 45%;
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
+    background-color: lightgreen;
+    border-radius: 15px;
     align-items: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
@@ -21,11 +23,11 @@
     }
   }
 
-  .banner {
-    width: 55%;
+  /* .banner {
+    width: 25%;
     align-self: center;
     padding: 8px;
-  }
+  } */
 }
 
 @media (max-width: 800px) {
