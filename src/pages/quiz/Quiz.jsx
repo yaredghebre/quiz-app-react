@@ -1,4 +1,7 @@
+import { CircularProgress } from "@mui/material";
 import React, { useEffect } from "react"; //to be called once component it's rendered
+import { useState } from "react";
+import "./Quiz.css";
 
 const Quiz = ({ name, score, questions, setQuestions, setScore }) => {
   const [options, setOptions] = useState();
@@ -17,11 +20,23 @@ const Quiz = ({ name, score, questions, setQuestions, setScore }) => {
     );
   }, [questions]);
 
-  const handleShuffle = (possibilities) => {
-    return possibilities.sort(() => Math.random() - 0.5); // used function to randomize answers
-  };
+  return (
+    <div className="quiz">
+      <h2 className="subtitle">Welcome, {name}</h2>
 
-  return <div>Quiz</div>;
+      {questions ? (
+        <>Questions</>
+      ) : (
+        // LOADER
+        <CircularProgress
+          style={{ margin: 100 }}
+          color="inherit"
+          size={150}
+          thickness={1}
+        />
+      )}
+    </div>
+  );
 };
 
 export default Quiz;
