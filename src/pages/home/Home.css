@@ -6,7 +6,7 @@
     width: 45%;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: lightgreen;
     border-radius: 15px;
     align-items: center;
