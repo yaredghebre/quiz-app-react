@@ -43,10 +43,25 @@
         }
       }
 
-      @media (max-width: 614px) {
+      @media (max-width: 827px) {
         .single-answer {
           width: 100%;
         }
+      }
+    }
+
+    .controls {
+      display: flex;
+      width: 50%;
+      gap: 10px;
+      justify-content: space-around;
+    }
+
+    @media (max-width: 827px) {
+      .controls {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
       }
     }
   }

@@ -19,7 +19,7 @@ const Quiz = ({ name, score, questions, setQuestions, setScore }) => {
           ...questions[currQuestion]?.incorrect_answers,
         ])
     );
-  }, [questions]);
+  }, [questions, currQuestion]);
 
   const handleShuffle = (options) => {
     return options.sort(() => Math.random() - 0.5); // function to randomize answers
