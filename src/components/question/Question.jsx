@@ -12,7 +12,6 @@ const Question = ({
   correct,
   score,
   setScore,
-  setQuestions,
 }) => {
   const [selected, setSelected] = useState();
   const [error, setError] = useState(false);
@@ -46,7 +45,6 @@ const Question = ({
 
   const handleQuit = () => {
     setCurrQuestion(0);
-    setQuestions();
   };
 
   return (
@@ -55,13 +53,13 @@ const Question = ({
       <div className="single-question">
         <h2>{questions[currQuestion].question}</h2>
 
+        {error && (
+          <Alert style={{ margin: 25 }} severity="error">
+            Please choose an answer!
+          </Alert>
+        )}
         {/* ANSWERS */}
         <div className="options">
-          {error && (
-            <Alert style={{ marginBottom: 25 }} severity="error">
-              Please choose an answer!
-            </Alert>
-          )}
           {options &&
             options.map((i) => (
               <button
