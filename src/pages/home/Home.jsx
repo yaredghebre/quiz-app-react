@@ -25,7 +25,7 @@ const Home = ({ name, setName, getQuestions }) => {
   return (
     <div className="content">
       <div className="settings">
-        <span style={{ fontSize: 30 }}>Quiz Settings</span>
+        <span style={{ fontSize: 30 }}>Settings</span>
 
         <div className="settings-select">
           {error && (

@@ -1,6 +1,19 @@
 .footer {
-  /* height: 2vh; */
-  /* width: 100%; */
+  background-color: #004aad;
+}
+
+.author {
+  width: 20%;
+  margin: 0 auto;
   text-align: center;
-  font-size: 2rem;
+  color: red;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.author:hover {
+  transform: scale(1.1);
+  color: #ff914d;
+  /* border: 1px solid #ff914d;
+  border-radius: 5px; */
 }

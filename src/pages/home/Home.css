@@ -1,13 +1,14 @@
 .content {
   display: flex;
   justify-content: space-around;
+  background-color: rgba(128, 0, 128, 0.5);
 
   .settings {
     width: 45%;
     display: flex;
+    margin: 20px;
     flex-direction: column;
-    /* border: 1px solid red; */
-    background-color: lightgreen;
+    background-color: lightgray;
     border-radius: 15px;
     align-items: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -17,17 +18,11 @@
       display: flex;
       flex-direction: column;
       padding: 20px;
-      width: 100;
+      width: 100%;
       flex: 0.8;
       justify-content: space-evenly;
     }
   }
-
-  /* .banner {
-    width: 25%;
-    align-self: center;
-    padding: 8px;
-  } */
 }
 
 @media (max-width: 800px) {

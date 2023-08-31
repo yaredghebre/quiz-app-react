@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: lightcyan;
   height: 100vh;
+  background-color: rgba(128, 0, 128, 0.5);
 }
 
 a {

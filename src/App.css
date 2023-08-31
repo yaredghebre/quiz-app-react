@@ -1,4 +1,5 @@
 .app {
   width: 100%;
-  min-height: 98vh;
+  height: 98vh;
+  /* background-color: #004aad; */
 }

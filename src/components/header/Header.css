@@ -2,17 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #004aad;
 
   .title {
     text-transform: uppercase;
-    font-size: 5rem;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #ff914d;
     cursor: pointer;
+
+    .logo-pic {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+    }
   }
 
-  .divider {
+  /* .divider {
     margin: 10px;
     width: 100%;
     background-color: grey;
-  }
+  } */
 }

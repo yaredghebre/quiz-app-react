@@ -5,9 +5,9 @@ const Header = () => {
   return (
     <div className="header">
       <Link to="/" className="title">
-        Quiz App
+        <img className="logo-pic" src="/QUIZ.png" alt="" />
       </Link>
-      <hr className="divider" />
+      {/* <hr className="divider" /> */}
     </div>
   );
 };
