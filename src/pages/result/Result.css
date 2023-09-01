@@ -4,4 +4,10 @@
   justify-content: center;
   height: 60vh;
   text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  .score {
+    color: lightgreen;
+  }
 }

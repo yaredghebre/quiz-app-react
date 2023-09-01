@@ -7,11 +7,14 @@
   .single-question {
     width: 95%;
     min-height: 350px;
+    color: lightblue;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border: 2px solid grey;
+    border: 1px solid grey;
+    border-radius: 5px;
     padding: 20px;
     margin-top: 10px;
 
@@ -44,6 +47,10 @@
       width: 50%;
       gap: 10px;
       justify-content: space-around;
+
+      .quit-button {
+        background-color: darkgray;
+      }
     }
 
     @media (max-width: 827px) {

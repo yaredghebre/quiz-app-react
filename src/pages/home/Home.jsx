@@ -25,7 +25,7 @@ const Home = ({ name, setName, getQuestions }) => {
   return (
     <div className="content">
       <div className="settings">
-        <span style={{ fontSize: 30 }}>Settings</span>
+        <span style={{ fontSize: 30 }}></span>
 
         <div className="settings-select">
           {error && (
@@ -91,12 +91,6 @@ const Home = ({ name, setName, getQuestions }) => {
           </Button>
         </div>
       </div>
-
-      {/* <img
-        src="https://media.istockphoto.com/id/1155472165/pt/vetorial/trivia-night-neon-sign-vector-quiz-time-design-template-neon-sign-light-banner-neon.jpg?s=612x612&w=0&k=20&c=BFgFuV1iwdaDL5-EMKn-d_r_az1LjTmunvHk8aHLC48="
-        alt="quiz img"
-        className="banner"
-      /> */}
     </div>
   );
 };

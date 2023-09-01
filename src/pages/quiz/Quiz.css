@@ -6,12 +6,18 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 20px;
   background-color: rgba(128, 0, 128, 0.5);
-  height: 98vh;
-  color: orange;
+  height: 100vh;
+  color: white;
+
+  .info {
+    color: lightgreen;
+  }
 
   .subtitle {
     font-size: 25px;
+    color: orange;
     border: 1px solid black;
+    border-radius: 5px;
     box-shadow: 4px 4px 2px black;
     padding: 5px 10px;
   }
